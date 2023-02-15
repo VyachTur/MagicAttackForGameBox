@@ -1,6 +1,5 @@
-using System;
 using UnityEngine;
-using UnityEngine.InputSystem;
+using StaticData;
 
 namespace Player
 {
@@ -9,24 +8,21 @@ namespace Player
     {
         [SerializeField] private float _moveSpeed;
         [SerializeField] private float _gravity = Physics.gravity.y;
-
         [SerializeField] private Animator _playerAnimator;
 
         private CharacterController _characterController;
-        // private float _verticalInput;
-        // private float _horizontalInput;
         private IInputMove _inputMove;
-        private Vector3 _direction;
+        private Vector3 _moveDirection;
 
         private void Awake()
         {
             _inputMove = FindObjectOfType<PlayerInput>();
-            _inputMove.OnPlayerMoveEvent += OnSetInputDirection;
+            _inputMove.OnPlayerMoveEvent += SetMoveDirection;
         }
 
-        private void OnSetInputDirection(Vector2 direction)
+        private void SetMoveDirection(Vector2 direction)
         {
-            _direction = direction;
+            _moveDirection = direction;
         }
 
         private void Start()
@@ -34,33 +30,56 @@ namespace Player
             TryGetComponent(out _characterController);
         }
 
-        // private void Update()
-        // {
-        //     // _verticalInput = Input.GetAxis("Vertical");
-        //     // _horizontalInput = Input.GetAxis("Horizontal");
-
-
-        // }
-
-        // public void OnMovement(InputAction.CallbackContext value)
-        // {
-        //     Vector2 inputMovement = value.ReadValue<Vector2>();
-            
-        //     _direction = new Vector3(inputMovement.x * _moveSpeed, _gravity, inputMovement.y * _moveSpeed);
-
-        //     print("OnMovement");
-        // }
-
         private void FixedUpdate()
         {
-            _direction = new Vector3(_direction.x * _moveSpeed, _gravity, _direction.y * _moveSpeed) * Time.fixedDeltaTime;
+            Vector3 moveToward = new Vector3(_moveDirection.x * _moveSpeed, _gravity, _moveDirection.y * _moveSpeed) * Time.fixedDeltaTime;
 
-            // _direction = _direction * Time.fixedDeltaTime;
+            _characterController.Move(moveToward); // player move fith gravity
 
-            _characterController.Move(_direction); // player move fith gravity
+            MoveAnimation();
 
-            // Debug.DrawRay(transform.position, new Vector3(_direction.x, 0f, _direction.z) * 10f, Color.red);
+            // Debug.DrawRay(transform.position, new Vector3(_moveDirection.x, 0f, _moveDirection.z) * 10f, Color.red);
+        }
 
+        private bool IsPlayerMove()
+        {
+            return (_moveDirection.x > Constants.Epsilon || _moveDirection.y > Constants.Epsilon
+                    || _moveDirection.x < -Constants.Epsilon || _moveDirection.y < -Constants.Epsilon);
+        }
+
+        private void MoveAnimation()
+        {
+            if (IsPlayerMove())
+            {
+                _playerAnimator.SetBool(Constants.IsMove, true);
+                _playerAnimator.SetFloat(Constants.MoveX, GetAxisXToAnimation(transform.forward, _moveDirection));
+                _playerAnimator.SetFloat(Constants.MoveY, GetAxisYToAnimation(transform.forward, _moveDirection));
+            }
+            else
+            {
+                _playerAnimator.SetBool(Constants.IsMove, false);
+            }
+        }
+
+
+        private float GetAxisXToAnimation(Vector3 forward, Vector3 moveDirection)
+        {
+            if (moveDirection.x == 1f) return forward.z;
+            if (moveDirection.x == -1f) return -forward.z;
+            if (moveDirection.y == 1f) return -forward.x;
+            if (moveDirection.y == -1f) return forward.x;
+
+            return 0f;
+        }
+
+        private float GetAxisYToAnimation(Vector3 forward, Vector3 moveDirection)
+        {
+            if (moveDirection.x == 1f) return forward.x;
+            if (moveDirection.x == -1f) return -forward.x;
+            if (moveDirection.y == 1f) return forward.z;
+            if (moveDirection.y == -1f) return -forward.z;
+
+            return 0f;
         }
     }
 }

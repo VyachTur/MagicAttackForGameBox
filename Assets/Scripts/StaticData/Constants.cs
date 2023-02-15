@@ -2,9 +2,9 @@ namespace StaticData
 {
     public struct Constants
     {
-        private const string Walk = "Walk";
-        private const string Run = "Run";
-        private const string Speed = "Speed";
-        private const string IsRunning = "IsRunning";
+        public const float Epsilon = 0.1f;
+        public const string IsMove = "IsMove";
+        public const string MoveX = "MoveX";
+        public const string MoveY = "MoveY";
     }
 }
