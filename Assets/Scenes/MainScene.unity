@@ -1118,8 +1118,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.3563035, g: 0.3612969, b: 0.4811321, a: 1}
-    - _Color: {r: 0.35630348, g: 0.36129683, b: 0.4811321, a: 1}
+    - _BaseColor: {r: 0.4811321, g: 0.3563034, b: 0.40873188, a: 1}
+    - _Color: {r: 0.4811321, g: 0.35630336, b: 0.40873185, a: 1}
     - _EmissionColor: {r: 0.0754717, g: 0.06514774, b: 0.06514774, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
