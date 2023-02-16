@@ -1,5 +1,6 @@
 using UnityEngine;
 using StaticData;
+using Player.Input;
 
 namespace Player
 {
