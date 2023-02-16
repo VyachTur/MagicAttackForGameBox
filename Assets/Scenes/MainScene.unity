@@ -662,6 +662,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &859782708 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5984511022492403383, guid: fd52407029009474b99efe48b13dc505,
+    type: 3}
+  m_PrefabInstance: {fileID: 5984511022741484348}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &885196751
 GameObject:
   m_ObjectHideFlags: 0
@@ -698,6 +704,25 @@ Transform:
   m_Father: {fileID: 1433964211}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &943842635 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5984511022237985436, guid: fd52407029009474b99efe48b13dc505,
+    type: 3}
+  m_PrefabInstance: {fileID: 5984511022741484348}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &943842642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943842635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca81e94f04e609a4ebe30e7017a869a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 859782708}
 --- !u!1 &973023279
 GameObject:
   m_ObjectHideFlags: 0
@@ -856,8 +881,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.4811321, g: 0.36379918, b: 0.35630986, a: 1}
-    - _Color: {r: 0.4811321, g: 0.36379915, b: 0.35630983, a: 1}
+    - _BaseColor: {r: 0.35630932, g: 0.39874926, b: 0.4811321, a: 1}
+    - _Color: {r: 0.3563093, g: 0.39874923, b: 0.4811321, a: 1}
     - _EmissionColor: {r: 0.0754717, g: 0.06514774, b: 0.06514774, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
@@ -1269,6 +1294,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5984511022237985432, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: _moveSpeed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5984511022237985435, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: _animator
+      value: 
+      objectReference: {fileID: 859782708}
     - target: {fileID: 5984511022237985436, guid: fd52407029009474b99efe48b13dc505,
         type: 3}
       propertyPath: m_Name
