@@ -38,8 +38,6 @@ namespace Player
             _characterController.Move(moveToward); // player move fith gravity
 
             MoveAnimation();
-
-            // Debug.DrawRay(transform.position, new Vector3(_moveDirection.x, 0f, _moveDirection.z) * 10f, Color.red);
         }
 
         private bool IsPlayerMove()
@@ -81,6 +79,11 @@ namespace Player
             if (moveDirection.y == -1f) return -forward.z;
 
             return 0f;
+        }
+
+        private void OnDestroy()
+        {
+            _inputMove.OnPlayerMoveEvent -= SetMoveDirection;
         }
     }
 }
