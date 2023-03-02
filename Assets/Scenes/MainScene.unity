@@ -1936,7 +1936,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isSpawnerActive: 1
-  _poolCount: 5
+  _poolCount: 100
   AutoExpand: 1
   _slimePrefab: {fileID: 7450409873213087563, guid: 570f62b073d06454897eebaae78a60d3,
     type: 3}
@@ -1946,7 +1946,8 @@ MonoBehaviour:
     type: 3}
   _orcPrefab: {fileID: 388476414, guid: f0eba881acf39b840b28a298e0820e35, type: 3}
   _golemPrefab: {fileID: 1077356408, guid: df788499776e1894ca412ad5b34246d8, type: 3}
-  EveryOneSpawnSeconds: 3
+  _everyEnemySpawnSeconds: 2
+  _countEnemySpawnOneWay: 4
   _leftBound: {fileID: 731231869}
   _rightBound: {fileID: 70085645}
   _topBound: {fileID: 1454278305}
@@ -2064,8 +2065,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.4811321, g: 0.35628363, b: 0.3562841, a: 1}
-    - _Color: {r: 0.4811321, g: 0.3562836, b: 0.35628408, a: 1}
+    - _BaseColor: {r: 0.4811321, g: 0.35628343, b: 0.4761385, a: 1}
+    - _Color: {r: 0.4811321, g: 0.35628337, b: 0.4761384, a: 1}
     - _EmissionColor: {r: 0.0754717, g: 0.06514774, b: 0.06514774, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
@@ -3364,6 +3365,81 @@ PrefabInstance:
       propertyPath: _magicProjectileSound
       value: 
       objectReference: {fileID: 1931004737}
+    - target: {fileID: 3786270886616824452, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786270886616824452, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786270886616824452, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786270886616824452, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786270886616824452, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786270886909812094, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786270886909812094, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786270887863102865, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786270887863102865, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786270888154942059, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786270888154942059, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786270888154942059, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786270888154942059, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786270888154942059, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786270888154942059, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4242791797414366447, guid: fd52407029009474b99efe48b13dc505,
         type: 3}
       propertyPath: _dashSound
