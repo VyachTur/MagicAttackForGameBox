@@ -2065,8 +2065,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.4811321, g: 0.40122586, b: 0.35627863, a: 1}
-    - _Color: {r: 0.4811321, g: 0.4012258, b: 0.3562786, a: 1}
+    - _BaseColor: {r: 0.4811321, g: 0.3637691, b: 0.35627785, a: 1}
+    - _Color: {r: 0.4811321, g: 0.36376908, b: 0.35627782, a: 1}
     - _EmissionColor: {r: 0.0754717, g: 0.06514774, b: 0.06514774, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
@@ -3422,10 +3422,6 @@ PrefabInstance:
       propertyPath: _magicProjectileSound
       value: 
       objectReference: {fileID: 1931004737}
-    - target: {fileID: 225763582, guid: fd52407029009474b99efe48b13dc505, type: 3}
-      propertyPath: IsActiveMagicProjectile
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3786270886616824452, guid: fd52407029009474b99efe48b13dc505,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -3565,26 +3561,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5984511022741484362, guid: fd52407029009474b99efe48b13dc505,
-        type: 3}
-      propertyPath: _power
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5984511022741484362, guid: fd52407029009474b99efe48b13dc505,
-        type: 3}
-      propertyPath: _radius
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5984511022741484362, guid: fd52407029009474b99efe48b13dc505,
-        type: 3}
-      propertyPath: _upForce
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5984511022741484362, guid: fd52407029009474b99efe48b13dc505,
-        type: 3}
-      propertyPath: _damageMakeRadius
-      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd52407029009474b99efe48b13dc505, type: 3}
