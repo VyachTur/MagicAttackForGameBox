@@ -1680,7 +1680,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0422\u044B \u043F\u0440\u043E\u0438\u0433\u0440\u0430\u043B"
+  m_text: "\u0422\u044B \u043F\u0440\u043E\u0438\u0433\u0440\u0430\u043B!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1690,7 +1690,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4279704771
-  m_fontColor: {r: 0.764151, g: 0.1083294, b: 0.09011213, a: 1}
+  m_fontColor: {r: 0.8396226, g: 0.29108593, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2066,8 +2066,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.4811321, g: 0.38623992, b: 0.35627398, a: 1}
-    - _Color: {r: 0.4811321, g: 0.3862399, b: 0.35627395, a: 1}
+    - _BaseColor: {r: 0.36626068, g: 0.4811321, b: 0.35627183, a: 1}
+    - _Color: {r: 0.36626062, g: 0.4811321, b: 0.3562718, a: 1}
     - _EmissionColor: {r: 0.0754717, g: 0.06514774, b: 0.06514774, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
@@ -3448,6 +3448,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 225763582, guid: fd52407029009474b99efe48b13dc505, type: 3}
+      propertyPath: IsActiveMagicProjectile
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3786270886616824452, guid: fd52407029009474b99efe48b13dc505,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -3523,6 +3527,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5638002260177457115, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: _currentHealth
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 5984511022237985436, guid: fd52407029009474b99efe48b13dc505,
         type: 3}
       propertyPath: m_Name
@@ -3541,7 +3550,7 @@ PrefabInstance:
     - target: {fileID: 5984511022237985437, guid: fd52407029009474b99efe48b13dc505,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 5984511022237985437, guid: fd52407029009474b99efe48b13dc505,
         type: 3}
@@ -3583,6 +3592,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5984511022741484361, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: _popupExpText
+      value: 
+      objectReference: {fileID: 5934606277651173634, guid: 8643d62f47518b140b61f922952f7953,
+        type: 3}
+    - target: {fileID: 5984511022741484363, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: _textPopup
+      value: 
+      objectReference: {fileID: 5984511022741484357}
+    - target: {fileID: 5984511022741484363, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: _currentExp
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5984511022741484364, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: _currentLevel
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd52407029009474b99efe48b13dc505, type: 3}
 --- !u!114 &5984511022741484349 stripped
@@ -3595,5 +3625,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b3b813bd8751f2448bf61a02facde565, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5984511022741484357 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5984511022741484361, guid: fd52407029009474b99efe48b13dc505,
+    type: 3}
+  m_PrefabInstance: {fileID: 5984511022741484348}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb0d74937e02d0f44abd4166b9c65846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
