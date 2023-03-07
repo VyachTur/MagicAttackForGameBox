@@ -2,7 +2,10 @@ namespace StaticData
 {
     public struct Constants
     {
+        // approximate values
         public const float Epsilon = 0.1f;
+        public const float Delta = 0.05f;
+
 
         // Animator
         public const string IsMove = "IsMove";
