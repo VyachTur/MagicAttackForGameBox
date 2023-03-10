@@ -1098,8 +1098,8 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 80}
-  m_Pivot: {x: 1, y: 1}
+  m_SizeDelta: {x: 140, y: 70}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &757466668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2066,8 +2066,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.3562717, g: 0.45865735, b: 0.4811321, a: 1}
-    - _Color: {r: 0.35627168, g: 0.45865732, b: 0.4811321, a: 1}
+    - _BaseColor: {r: 0.4811321, g: 0.40871295, b: 0.35627154, a: 1}
+    - _Color: {r: 0.4811321, g: 0.4087129, b: 0.3562715, a: 1}
     - _EmissionColor: {r: 0.0754717, g: 0.06514774, b: 0.06514774, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
@@ -3065,7 +3065,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -30, y: -10}
-  m_SizeDelta: {x: 300, y: 120}
+  m_SizeDelta: {x: 260, y: 120}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1862548527
 MonoBehaviour:
@@ -3084,7 +3084,7 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 4
+  m_ChildAlignment: 5
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
@@ -3448,6 +3448,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 85063110, guid: fd52407029009474b99efe48b13dc505, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 85063110, guid: fd52407029009474b99efe48b13dc505, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 85063110, guid: fd52407029009474b99efe48b13dc505, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 85063110, guid: fd52407029009474b99efe48b13dc505, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3786270886616824452, guid: fd52407029009474b99efe48b13dc505,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -3523,6 +3539,26 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5021628844452129495, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5021628844452129495, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5021628844452129495, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5021628844452129495, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5984511022237985436, guid: fd52407029009474b99efe48b13dc505,
         type: 3}
       propertyPath: m_Name
@@ -3581,6 +3617,26 @@ PrefabInstance:
     - target: {fileID: 5984511022237985437, guid: fd52407029009474b99efe48b13dc505,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906326320338244603, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906326320338244603, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906326320338244603, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906326320338244603, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

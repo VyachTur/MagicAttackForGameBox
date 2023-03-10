@@ -4,7 +4,7 @@ namespace StaticData
     {
         // approximate values
         public const float Epsilon = 0.1f;
-        public const float Delta = 0.05f;
+        public const float Delta = 0.08f;
 
 
         // Animator
