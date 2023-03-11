@@ -19,7 +19,8 @@ namespace Player
         private void Awake()
         {
             _inputMove = GetComponent<PlayerInput>();
-            _inputMove.OnPlayerMoveEvent += SetMoveDirection;
+            _inputMove.OnPlayerMoveStartEvent += SetMoveDirection;
+            _inputMove.OnPlayerMoveEndEvent += SetMoveDirection;
         }
 
         private void SetMoveDirection(Vector2 direction)
@@ -36,7 +37,7 @@ namespace Player
         {
             Vector3 moveToward = new Vector3(_moveDirection.x * _moveSpeed, _gravity, _moveDirection.y * _moveSpeed) * Time.fixedDeltaTime;
 
-            _characterController.Move(moveToward); // player move fith gravity
+            _characterController.Move(moveToward); // игрок двигается под воздействием гравитации
 
             MoveAnimation();
         }
@@ -84,7 +85,8 @@ namespace Player
 
         private void OnDestroy()
         {
-            _inputMove.OnPlayerMoveEvent -= SetMoveDirection;
+            _inputMove.OnPlayerMoveStartEvent -= SetMoveDirection;
+            _inputMove.OnPlayerMoveEndEvent -= SetMoveDirection;
         }
     }
 }
