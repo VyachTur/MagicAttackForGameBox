@@ -1936,7 +1936,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 135d9252564aaa2479f5dbc4bba36cf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isSpawnerActive: 1
+  _isSpawnerActive: 0
   _poolCount: 100
   AutoExpand: 1
   _slimePrefab: {fileID: 7450409873213087563, guid: 570f62b073d06454897eebaae78a60d3,
@@ -2066,8 +2066,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.35627112, g: 0.47364056, b: 0.4811321, a: 1}
-    - _Color: {r: 0.3562711, g: 0.4736405, b: 0.4811321, a: 1}
+    - _BaseColor: {r: 0.35627022, g: 0.4811321, b: 0.46614853, a: 1}
+    - _Color: {r: 0.3562702, g: 0.4811321, b: 0.4661485, a: 1}
     - _EmissionColor: {r: 0.0754717, g: 0.06514774, b: 0.06514774, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
@@ -3382,8 +3382,7 @@ MonoBehaviour:
     type: 3}
   m_PointAction: {fileID: 8695291595615409596, guid: e87bf9c8aea4bf7499a94af5cb5eb9ab,
     type: 3}
-  m_MoveAction: {fileID: -5064943034751828011, guid: e87bf9c8aea4bf7499a94af5cb5eb9ab,
-    type: 3}
+  m_MoveAction: {fileID: 0}
   m_SubmitAction: {fileID: 6268172975818953845, guid: e87bf9c8aea4bf7499a94af5cb5eb9ab,
     type: 3}
   m_CancelAction: {fileID: 0}

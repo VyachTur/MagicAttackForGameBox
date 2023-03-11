@@ -5,6 +5,7 @@ using Player.Input;
 namespace Player
 {
     [RequireComponent(typeof(CharacterController))]
+    [RequireComponent(typeof(PlayerInput))]
     public class PlayerMove : MonoBehaviour
     {
         [SerializeField] private float _moveSpeed;
@@ -17,7 +18,7 @@ namespace Player
 
         private void Awake()
         {
-            _inputMove = FindObjectOfType<PlayerInput>();
+            _inputMove = GetComponent<PlayerInput>();
             _inputMove.OnPlayerMoveEvent += SetMoveDirection;
         }
 
