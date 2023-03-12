@@ -2066,8 +2066,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.4811321, g: 0.3562696, b: 0.40122053, a: 1}
-    - _Color: {r: 0.4811321, g: 0.35626957, b: 0.4012205, a: 1}
+    - _BaseColor: {r: 0.44866776, g: 0.4811321, b: 0.3562694, a: 1}
+    - _Color: {r: 0.4486677, g: 0.4811321, b: 0.35626936, a: 1}
     - _EmissionColor: {r: 0.0754717, g: 0.06514774, b: 0.06514774, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
@@ -3456,6 +3456,22 @@ PrefabInstance:
     - target: {fileID: 85063110, guid: fd52407029009474b99efe48b13dc505, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1521831513, guid: fd52407029009474b99efe48b13dc505, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.8862745
+      objectReference: {fileID: 0}
+    - target: {fileID: 1521831513, guid: fd52407029009474b99efe48b13dc505, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.8862745
+      objectReference: {fileID: 0}
+    - target: {fileID: 1521831513, guid: fd52407029009474b99efe48b13dc505, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.8862745
+      objectReference: {fileID: 0}
+    - target: {fileID: 1521831513, guid: fd52407029009474b99efe48b13dc505, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4293059298
       objectReference: {fileID: 0}
     - target: {fileID: 3786270886616824452, guid: fd52407029009474b99efe48b13dc505,
         type: 3}
