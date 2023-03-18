@@ -19,6 +19,8 @@ namespace Player
         private void Awake()
         {
             _inputMove = GetComponent<PlayerInput>();
+            _characterController = GetComponent<CharacterController>();
+            
             _inputMove.OnPlayerMoveStartEvent += SetMoveDirection;
             _inputMove.OnPlayerMoveEndEvent += SetMoveDirection;
         }
@@ -26,11 +28,6 @@ namespace Player
         private void SetMoveDirection(Vector2 direction)
         {
             _moveDirection = direction;
-        }
-
-        private void Start()
-        {
-            TryGetComponent(out _characterController);
         }
 
         private void FixedUpdate()
