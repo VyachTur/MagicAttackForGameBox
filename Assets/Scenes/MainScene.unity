@@ -2069,8 +2069,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.35626373, g: 0.4736401, b: 0.4811321, a: 1}
-    - _Color: {r: 0.3562637, g: 0.47364008, b: 0.4811321, a: 1}
+    - _BaseColor: {r: 0.36625293, g: 0.3562637, b: 0.4811321, a: 1}
+    - _Color: {r: 0.3662529, g: 0.35626367, b: 0.4811321, a: 1}
     - _EmissionColor: {r: 0.0754717, g: 0.06514774, b: 0.06514774, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
@@ -3460,6 +3460,117 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 85063110, guid: fd52407029009474b99efe48b13dc505, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 85063110, guid: fd52407029009474b99efe48b13dc505, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 85063110, guid: fd52407029009474b99efe48b13dc505, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 85063110, guid: fd52407029009474b99efe48b13dc505, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786270886616824452, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786270886616824452, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786270886616824452, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786270886616824452, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786270886616824452, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786270886909812094, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786270886909812094, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786270887863102865, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786270887863102865, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786270888154942059, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786270888154942059, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786270888154942059, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786270888154942059, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786270888154942059, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786270888154942059, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5021628844452129495, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5021628844452129495, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5021628844452129495, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5021628844452129495, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5984511022237985436, guid: fd52407029009474b99efe48b13dc505,
         type: 3}
       propertyPath: m_Name
@@ -3518,6 +3629,26 @@ PrefabInstance:
     - target: {fileID: 5984511022237985437, guid: fd52407029009474b99efe48b13dc505,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906326320338244603, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906326320338244603, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906326320338244603, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906326320338244603, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
