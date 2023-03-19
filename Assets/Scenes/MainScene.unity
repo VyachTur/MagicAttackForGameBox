@@ -530,6 +530,63 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!1001 &366978697
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 388476414, guid: f0eba881acf39b840b28a298e0820e35, type: 3}
+      propertyPath: m_Name
+      value: GruntPolyart
+      objectReference: {fileID: 0}
+    - target: {fileID: 388476416, guid: f0eba881acf39b840b28a298e0820e35, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 388476416, guid: f0eba881acf39b840b28a298e0820e35, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 388476416, guid: f0eba881acf39b840b28a298e0820e35, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 388476416, guid: f0eba881acf39b840b28a298e0820e35, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 388476416, guid: f0eba881acf39b840b28a298e0820e35, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 388476416, guid: f0eba881acf39b840b28a298e0820e35, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 388476416, guid: f0eba881acf39b840b28a298e0820e35, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 388476416, guid: f0eba881acf39b840b28a298e0820e35, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 388476416, guid: f0eba881acf39b840b28a298e0820e35, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 388476416, guid: f0eba881acf39b840b28a298e0820e35, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 388476416, guid: f0eba881acf39b840b28a298e0820e35, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f0eba881acf39b840b28a298e0820e35, type: 3}
 --- !u!1 &391041179
 GameObject:
   m_ObjectHideFlags: 0
@@ -1950,9 +2007,9 @@ MonoBehaviour:
     type: 3}
   _turtlePrefab: {fileID: -5919291191567791256, guid: cfea94b5cc5000f4ba5491140890c19d,
     type: 3}
+  _orcPrefab: {fileID: 388476414, guid: f0eba881acf39b840b28a298e0820e35, type: 3}
   _lichPrefab: {fileID: 1839304754744059133, guid: 181527918b574ed45a65096faf618930,
     type: 3}
-  _orcPrefab: {fileID: 388476414, guid: f0eba881acf39b840b28a298e0820e35, type: 3}
   _golemPrefab: {fileID: 1077356408, guid: df788499776e1894ca412ad5b34246d8, type: 3}
   _everyEnemySpawnSeconds: 2
   _countEnemySpawnOneWay: 4
@@ -2073,8 +2130,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.35626304, g: 0.44367152, b: 0.4811321, a: 1}
-    - _Color: {r: 0.356263, g: 0.4436715, b: 0.4811321, a: 1}
+    - _BaseColor: {r: 0.35626286, g: 0.4811321, b: 0.4436712, a: 1}
+    - _Color: {r: 0.3562628, g: 0.4811321, b: 0.44367117, a: 1}
     - _EmissionColor: {r: 0.0754717, g: 0.06514774, b: 0.06514774, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
