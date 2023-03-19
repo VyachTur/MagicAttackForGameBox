@@ -1565,6 +1565,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a7ed18cfb664c145829811083826cf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _snapshotMain: {fileID: 1734689968939554931, guid: 214f2314497c9c1469840b6d5acef463,
+    type: 2}
+  _snapshotPaused: {fileID: 2537018709900056601, guid: 214f2314497c9c1469840b6d5acef463,
+    type: 2}
 --- !u!114 &929316214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2069,8 +2073,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.36625293, g: 0.3562637, b: 0.4811321, a: 1}
-    - _Color: {r: 0.3662529, g: 0.35626367, b: 0.4811321, a: 1}
+    - _BaseColor: {r: 0.35626304, g: 0.44367152, b: 0.4811321, a: 1}
+    - _Color: {r: 0.356263, g: 0.4436715, b: 0.4811321, a: 1}
     - _EmissionColor: {r: 0.0754717, g: 0.06514774, b: 0.06514774, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
@@ -2814,7 +2818,8 @@ AudioSource:
   m_GameObject: {fileID: 1768470473}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -5178307303196695977, guid: 214f2314497c9c1469840b6d5acef463,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: dc3192baa0aac8f4b85539a795a3e5f9, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.2
@@ -3199,7 +3204,8 @@ AudioSource:
   m_GameObject: {fileID: 1906059821}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -5178307303196695977, guid: 214f2314497c9c1469840b6d5acef463,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: f16c1b88a7238a14e8e4d370bd6d9559, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.2
