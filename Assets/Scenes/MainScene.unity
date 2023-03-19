@@ -1943,19 +1943,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 135d9252564aaa2479f5dbc4bba36cf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isSpawnerActive: 0
+  _isSpawnerActive: 1
   _poolCount: 100
   AutoExpand: 1
   _slimePrefab: {fileID: 7450409873213087563, guid: 570f62b073d06454897eebaae78a60d3,
     type: 3}
   _turtlePrefab: {fileID: -5919291191567791256, guid: cfea94b5cc5000f4ba5491140890c19d,
     type: 3}
-  _orcPrefab: {fileID: 388476414, guid: f0eba881acf39b840b28a298e0820e35, type: 3}
-  _lichPrefab: {fileID: 1839304754744059133, guid: 181527918b574ed45a65096faf618930,
+  _orcPrefab: {fileID: 7937228729143838262, guid: f0eba881acf39b840b28a298e0820e35,
+    type: 3}
+  _lichPrefab: {fileID: -382398143406974507, guid: 181527918b574ed45a65096faf618930,
     type: 3}
   _golemPrefab: {fileID: 1077356408, guid: df788499776e1894ca412ad5b34246d8, type: 3}
   _everyEnemySpawnSeconds: 2
-  _countEnemySpawnOneWay: 4
+  _countSlimeSpawnOneWay: 3
+  _countTurtleSpawnOneWay: 2
+  _countLichSpawnOneWay: 1
+  _countOrcSpawnOneWay: 1
   _leftBound: {fileID: 731231869}
   _rightBound: {fileID: 70085645}
   _topBound: {fileID: 1454278305}
@@ -2073,8 +2077,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.35626286, g: 0.4811321, b: 0.4436712, a: 1}
-    - _Color: {r: 0.3562628, g: 0.4811321, b: 0.44367117, a: 1}
+    - _BaseColor: {r: 0.4711424, g: 0.4811321, b: 0.3562612, a: 1}
+    - _Color: {r: 0.4711424, g: 0.4811321, b: 0.35626116, a: 1}
     - _EmissionColor: {r: 0.0754717, g: 0.06514774, b: 0.06514774, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
@@ -2787,6 +2791,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1768470474}
   - component: {fileID: 1768470475}
+  - component: {fileID: 1768470476}
   m_Layer: 0
   m_Name: MainSoundStart
   m_TagString: Untagged
@@ -2906,6 +2911,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1768470476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768470473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b8885d645efd8b4099c52196ea213e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _snapshotMain: {fileID: 1734689968939554931, guid: 214f2314497c9c1469840b6d5acef463,
+    type: 2}
 --- !u!1 &1814919874
 GameObject:
   m_ObjectHideFlags: 0
@@ -3482,6 +3501,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 225763582, guid: fd52407029009474b99efe48b13dc505, type: 3}
+      propertyPath: _damageMultiplier
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 225763582, guid: fd52407029009474b99efe48b13dc505, type: 3}
+      propertyPath: _isActiveMagicProjectile
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3786270886616824452, guid: fd52407029009474b99efe48b13dc505,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -3636,6 +3663,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5984511022741484363, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: _maxExp
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 6906326320338244603, guid: fd52407029009474b99efe48b13dc505,
         type: 3}
