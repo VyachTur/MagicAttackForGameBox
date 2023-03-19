@@ -1954,12 +1954,14 @@ MonoBehaviour:
     type: 3}
   _lichPrefab: {fileID: -382398143406974507, guid: 181527918b574ed45a65096faf618930,
     type: 3}
-  _golemPrefab: {fileID: 1077356408, guid: df788499776e1894ca412ad5b34246d8, type: 3}
+  _golemPrefab: {fileID: -3728932401382909432, guid: df788499776e1894ca412ad5b34246d8,
+    type: 3}
   _everyEnemySpawnSeconds: 2
   _countSlimeSpawnOneWay: 3
   _countTurtleSpawnOneWay: 2
-  _countLichSpawnOneWay: 1
   _countOrcSpawnOneWay: 1
+  _countLichSpawnOneWay: 2
+  _countGolemSpawnOneWay: 1
   _leftBound: {fileID: 731231869}
   _rightBound: {fileID: 70085645}
   _topBound: {fileID: 1454278305}
@@ -2077,8 +2079,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.4711424, g: 0.4811321, b: 0.3562612, a: 1}
-    - _Color: {r: 0.4711424, g: 0.4811321, b: 0.35626116, a: 1}
+    - _BaseColor: {r: 0.42618838, g: 0.3562607, b: 0.4811321, a: 1}
+    - _Color: {r: 0.42618835, g: 0.35626066, b: 0.4811321, a: 1}
     - _EmissionColor: {r: 0.0754717, g: 0.06514774, b: 0.06514774, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
@@ -3501,14 +3503,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 225763582, guid: fd52407029009474b99efe48b13dc505, type: 3}
-      propertyPath: _damageMultiplier
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 225763582, guid: fd52407029009474b99efe48b13dc505, type: 3}
-      propertyPath: _isActiveMagicProjectile
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3786270886616824452, guid: fd52407029009474b99efe48b13dc505,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -3663,11 +3657,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5984511022741484363, guid: fd52407029009474b99efe48b13dc505,
-        type: 3}
-      propertyPath: _maxExp
-      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 6906326320338244603, guid: fd52407029009474b99efe48b13dc505,
         type: 3}
