@@ -4,7 +4,7 @@ namespace StaticData
     {
         // approximate values
         public const float Epsilon = 0.1f;
-        public const float DeltaAttraction = 0.12f;
+        public const float DeltaAttraction = 0.2f;
         public const float DeltaSpawn = 0.015f;
 
 
