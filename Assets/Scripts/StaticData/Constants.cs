@@ -15,6 +15,7 @@ namespace StaticData
         public const string Idle = "Idle";
         public const string Walk = "Walk";
         public const string Attack = "Attack";
+        public const string IsPlayerAttack = "IsAttack";
         public const string Die = "Die";
         public const string Speed = "Speed";
     }
