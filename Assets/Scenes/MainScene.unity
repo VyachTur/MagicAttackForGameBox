@@ -1963,6 +1963,7 @@ MonoBehaviour:
     type: 3}
   _turtlePrefab: {fileID: -5919291191567791256, guid: cfea94b5cc5000f4ba5491140890c19d,
     type: 3}
+  _wariorPrefab: {fileID: 948244876, guid: ee164e45ea17c464d9b33c99b88c6c8f, type: 3}
   _orcPrefab: {fileID: 7937228729143838262, guid: f0eba881acf39b840b28a298e0820e35,
     type: 3}
   _lichPrefab: {fileID: -382398143406974507, guid: 181527918b574ed45a65096faf618930,
@@ -1973,6 +1974,7 @@ MonoBehaviour:
   _everyEnemySpawnSeconds: 2
   _countSlimeSpawnOneWay: 3
   _countTurtleSpawnOneWay: 2
+  _countWariorSpawnOneWay: 1
   _countOrcSpawnOneWay: 1
   _countLichSpawnOneWay: 2
   _countGolemSpawnOneWay: 1
@@ -2093,8 +2095,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.4811321, g: 0.45365962, b: 0.35625726, a: 1}
-    - _Color: {r: 0.4811321, g: 0.45365953, b: 0.35625723, a: 1}
+    - _BaseColor: {r: 0.4186937, g: 0.3562559, b: 0.4811321, a: 1}
+    - _Color: {r: 0.41869366, g: 0.35625586, b: 0.4811321, a: 1}
     - _EmissionColor: {r: 0.0754717, g: 0.06514774, b: 0.06514774, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
