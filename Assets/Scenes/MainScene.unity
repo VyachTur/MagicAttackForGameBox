@@ -108,15 +108,15 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.5
+    agentRadius: 1
     agentHeight: 2
     agentSlope: 45
-    agentClimb: 0.4
+    agentClimb: 1
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.16666667
+    cellSize: 0.33333334
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
@@ -3559,6 +3559,11 @@ PrefabInstance:
       propertyPath: _isActiveMagicProjectile
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 820399138760866379, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: _attractionRadius
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 3786270886616824452, guid: fd52407029009474b99efe48b13dc505,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -3713,6 +3718,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5984511022741484351, guid: fd52407029009474b99efe48b13dc505,
+        type: 3}
+      propertyPath: _attractionRadius
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 6906326320338244603, guid: fd52407029009474b99efe48b13dc505,
         type: 3}
