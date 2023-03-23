@@ -1971,7 +1971,7 @@ MonoBehaviour:
   _golemPrefab: {fileID: -3728932401382909432, guid: df788499776e1894ca412ad5b34246d8,
     type: 3}
   _redDragonPrefab: {fileID: 139696, guid: eb58e8f2831a51f45a44a261e6710cdd, type: 3}
-  _everyEnemySpawnSeconds: 2
+  _everyEnemySpawnSeconds: 1
   _countSlimeSpawnOneWay: 3
   _countTurtleSpawnOneWay: 2
   _countWariorSpawnOneWay: 1
@@ -2095,8 +2095,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.4811321, g: 0.35625547, b: 0.36374855, a: 1}
-    - _Color: {r: 0.4811321, g: 0.35625544, b: 0.36374852, a: 1}
+    - _BaseColor: {r: 0.41120073, g: 0.4811321, b: 0.35625473, a: 1}
+    - _Color: {r: 0.4112007, g: 0.4811321, b: 0.3562547, a: 1}
     - _EmissionColor: {r: 0.0754717, g: 0.06514774, b: 0.06514774, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
@@ -3552,8 +3552,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 225763582, guid: fd52407029009474b99efe48b13dc505, type: 3}
-      propertyPath: _damage
-      value: 1
+      propertyPath: _damageMultiplier
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 225763582, guid: fd52407029009474b99efe48b13dc505, type: 3}
+      propertyPath: _isActiveMagicProjectile
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3786270886616824452, guid: fd52407029009474b99efe48b13dc505,
         type: 3}
