@@ -137,12 +137,12 @@ GameObject:
   - component: {fileID: 70085648}
   - component: {fileID: 70085647}
   - component: {fileID: 70085646}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: BoundRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 126
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &70085645
 Transform:
@@ -989,12 +989,12 @@ GameObject:
   - component: {fileID: 731231872}
   - component: {fileID: 731231871}
   - component: {fileID: 731231870}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: BoundLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 126
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &731231869
 Transform:
@@ -1244,12 +1244,12 @@ GameObject:
   - component: {fileID: 814545567}
   - component: {fileID: 814545566}
   - component: {fileID: 814545565}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: BoundBottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 126
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &814545564
 Transform:
@@ -1378,6 +1378,18 @@ Transform:
   m_Father: {fileID: 1433964211}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &854559224 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1369559769, guid: fd52407029009474b99efe48b13dc505,
+    type: 3}
+  m_PrefabInstance: {fileID: 5984511022741484348}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &859324448
 GameObject:
   m_ObjectHideFlags: 0
@@ -1974,7 +1986,7 @@ MonoBehaviour:
   _everyEnemySpawnSeconds: 1
   _countSlimeSpawnOneWay: 3
   _countTurtleSpawnOneWay: 2
-  _countWariorSpawnOneWay: 1
+  _countWariorSpawnOneWay: 2
   _countOrcSpawnOneWay: 1
   _countLichSpawnOneWay: 2
   _countGolemSpawnOneWay: 1
@@ -1982,6 +1994,18 @@ MonoBehaviour:
   _rightBound: {fileID: 70085645}
   _topBound: {fileID: 1454278305}
   _bottomBound: {fileID: 814545564}
+--- !u!114 &1319798583 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 334443958, guid: fd52407029009474b99efe48b13dc505,
+    type: 3}
+  m_PrefabInstance: {fileID: 5984511022741484348}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!21 &1423361393
 Material:
   serializedVersion: 8
@@ -2095,8 +2119,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.41120073, g: 0.4811321, b: 0.35625473, a: 1}
-    - _Color: {r: 0.4112007, g: 0.4811321, b: 0.3562547, a: 1}
+    - _BaseColor: {r: 0.4186929, g: 0.35625428, b: 0.4811321, a: 1}
+    - _Color: {r: 0.41869286, g: 0.35625422, b: 0.4811321, a: 1}
     - _EmissionColor: {r: 0.0754717, g: 0.06514774, b: 0.06514774, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
@@ -2146,12 +2170,12 @@ GameObject:
   - component: {fileID: 1454278308}
   - component: {fileID: 1454278307}
   - component: {fileID: 1454278306}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: BoundTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 126
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1454278305
 Transform:
@@ -3559,6 +3583,18 @@ PrefabInstance:
       propertyPath: _isActiveMagicProjectile
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1319974581, guid: fd52407029009474b99efe48b13dc505, type: 3}
+      propertyPath: _otherButtons.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1319974581, guid: fd52407029009474b99efe48b13dc505, type: 3}
+      propertyPath: _otherButtons.Array.data[0]
+      value: 
+      objectReference: {fileID: 1319798583}
+    - target: {fileID: 1319974581, guid: fd52407029009474b99efe48b13dc505, type: 3}
+      propertyPath: _otherButtons.Array.data[1]
+      value: 
+      objectReference: {fileID: 854559224}
     - target: {fileID: 820399138760866379, guid: fd52407029009474b99efe48b13dc505,
         type: 3}
       propertyPath: _attractionRadius
