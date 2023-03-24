@@ -1378,18 +1378,6 @@ Transform:
   m_Father: {fileID: 1433964211}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &854559224 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1369559769, guid: fd52407029009474b99efe48b13dc505,
-    type: 3}
-  m_PrefabInstance: {fileID: 5984511022741484348}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &859324448
 GameObject:
   m_ObjectHideFlags: 0
@@ -1975,6 +1963,8 @@ MonoBehaviour:
     type: 3}
   _turtlePrefab: {fileID: -5919291191567791256, guid: cfea94b5cc5000f4ba5491140890c19d,
     type: 3}
+  _swordsmanPrefab: {fileID: 9028312074369064192, guid: c647a6e9ba715004ebbf4dc6d7bd1e7a,
+    type: 3}
   _wariorPrefab: {fileID: 948244876, guid: ee164e45ea17c464d9b33c99b88c6c8f, type: 3}
   _orcPrefab: {fileID: 7937228729143838262, guid: f0eba881acf39b840b28a298e0820e35,
     type: 3}
@@ -1984,8 +1974,9 @@ MonoBehaviour:
     type: 3}
   _redDragonPrefab: {fileID: 139696, guid: eb58e8f2831a51f45a44a261e6710cdd, type: 3}
   _everyEnemySpawnSeconds: 1
-  _countSlimeSpawnOneWay: 3
-  _countTurtleSpawnOneWay: 2
+  _countSlimeSpawnOneWay: 4
+  _countTurtleSpawnOneWay: 3
+  _countSwordsmanSpawnOneWay: 2
   _countWariorSpawnOneWay: 2
   _countOrcSpawnOneWay: 1
   _countLichSpawnOneWay: 2
@@ -1994,18 +1985,6 @@ MonoBehaviour:
   _rightBound: {fileID: 70085645}
   _topBound: {fileID: 1454278305}
   _bottomBound: {fileID: 814545564}
---- !u!114 &1319798583 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 334443958, guid: fd52407029009474b99efe48b13dc505,
-    type: 3}
-  m_PrefabInstance: {fileID: 5984511022741484348}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!21 &1423361393
 Material:
   serializedVersion: 8
@@ -2119,8 +2098,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.4186929, g: 0.35625428, b: 0.4811321, a: 1}
-    - _Color: {r: 0.41869286, g: 0.35625422, b: 0.4811321, a: 1}
+    - _BaseColor: {r: 0.4786345, g: 0.4811321, b: 0.35625318, a: 1}
+    - _Color: {r: 0.47863442, g: 0.4811321, b: 0.35625315, a: 1}
     - _EmissionColor: {r: 0.0754717, g: 0.06514774, b: 0.06514774, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
@@ -3575,31 +3554,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 225763582, guid: fd52407029009474b99efe48b13dc505, type: 3}
-      propertyPath: _damageMultiplier
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 225763582, guid: fd52407029009474b99efe48b13dc505, type: 3}
-      propertyPath: _isActiveMagicProjectile
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1319974581, guid: fd52407029009474b99efe48b13dc505, type: 3}
-      propertyPath: _otherButtons.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1319974581, guid: fd52407029009474b99efe48b13dc505, type: 3}
-      propertyPath: _otherButtons.Array.data[0]
-      value: 
-      objectReference: {fileID: 1319798583}
-    - target: {fileID: 1319974581, guid: fd52407029009474b99efe48b13dc505, type: 3}
-      propertyPath: _otherButtons.Array.data[1]
-      value: 
-      objectReference: {fileID: 854559224}
-    - target: {fileID: 820399138760866379, guid: fd52407029009474b99efe48b13dc505,
-        type: 3}
-      propertyPath: _attractionRadius
-      value: 14
-      objectReference: {fileID: 0}
     - target: {fileID: 3786270886616824452, guid: fd52407029009474b99efe48b13dc505,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -3754,11 +3708,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5984511022741484351, guid: fd52407029009474b99efe48b13dc505,
-        type: 3}
-      propertyPath: _attractionRadius
-      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 6906326320338244603, guid: fd52407029009474b99efe48b13dc505,
         type: 3}
