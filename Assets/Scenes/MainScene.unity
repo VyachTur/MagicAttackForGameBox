@@ -17,7 +17,7 @@ RenderSettings:
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.015
+  m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -2098,8 +2098,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.4786345, g: 0.4811321, b: 0.35625318, a: 1}
-    - _Color: {r: 0.47863442, g: 0.4811321, b: 0.35625315, a: 1}
+    - _BaseColor: {r: 0.44866332, g: 0.4811321, b: 0.35625222, a: 1}
+    - _Color: {r: 0.44866323, g: 0.4811321, b: 0.3562522, a: 1}
     - _EmissionColor: {r: 0.0754717, g: 0.06514774, b: 0.06514774, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
