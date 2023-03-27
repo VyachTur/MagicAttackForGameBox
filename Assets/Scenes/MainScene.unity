@@ -2321,7 +2321,7 @@ MonoBehaviour:
     type: 3}
   _redDragonPrefab: {fileID: 139696, guid: eb58e8f2831a51f45a44a261e6710cdd, type: 3}
   _everyEnemySpawnSeconds: 1
-  _countSlimeSpawnOneWay: 4
+  _countSlimeSpawnOneWay: 5
   _countTurtleSpawnOneWay: 3
   _countSwordsmanSpawnOneWay: 2
   _countWariorSpawnOneWay: 2
@@ -2445,8 +2445,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.4811321, g: 0.35624835, b: 0.4761371, a: 1}
-    - _Color: {r: 0.4811321, g: 0.35624832, b: 0.47613704, a: 1}
+    - _BaseColor: {r: 0.4811321, g: 0.3862199, b: 0.35624763, a: 1}
+    - _Color: {r: 0.4811321, g: 0.38621986, b: 0.3562476, a: 1}
     - _EmissionColor: {r: 0.0754717, g: 0.06514774, b: 0.06514774, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
