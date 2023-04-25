@@ -8,11 +8,10 @@ namespace Player
     {
         [SerializeField] private Animator _animator;
         [SerializeField] private CharacterController _characterController;
-
-        public event Action OnPlayerDieEvent;
-
+        
         private bool _isPlayerDie;
         public bool IsPlayerDie => _isPlayerDie;
+        public event Action OnPlayerDieEvent;
 
         public void Die()
         {

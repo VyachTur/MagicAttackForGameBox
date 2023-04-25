@@ -74,7 +74,7 @@ namespace Player
 
             gameObject.layer = startLayer;
         }
-
+        
         private async UniTask DashReload() 
         {
             OnDashReloadEvent?.Invoke();

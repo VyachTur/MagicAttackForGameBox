@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: f1b9c83e1841ef74cb4ac4ae97f96407,
     type: 2}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: b53d7efba1441c944bca2f69015a7a46,
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 40d038972c2173a4f86ea32b029063b0,
     type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -2835,8 +2835,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.38871735, g: 0.4811321, b: 0.3562473, a: 1}
-    - _Color: {r: 0.38871732, g: 0.4811321, b: 0.35624728, a: 1}
+    - _BaseColor: {r: 0.4811321, g: 0.41619194, b: 0.35624722, a: 1}
+    - _Color: {r: 0.4811321, g: 0.4161919, b: 0.3562472, a: 1}
     - _EmissionColor: {r: 0.0754717, g: 0.06514774, b: 0.06514774, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []

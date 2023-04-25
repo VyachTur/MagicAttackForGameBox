@@ -12,11 +12,8 @@ namespace Enemies
         [SerializeField] private Animator _enemyAnimator;
         [SerializeField] private EnemySO _enemySO;
         [SerializeField] private LayerMask _layerMaskDamagableObject;
-
         public static event Action<float> OnEnemyMakeDamageEvent;
-
         private PlayerHealth _target;
-
         private void OnEnable()
         {
             _target = FindObjectOfType<PlayerHealth>();
@@ -33,7 +30,8 @@ namespace Enemies
                     _enemyAnimator.SetTrigger(Constants.Attack);
                 }
             } 
-            else _enemyAnimator.ResetTrigger(Constants.Attack);
+            else 
+                _enemyAnimator.ResetTrigger(Constants.Attack);
         }
 
         public virtual void MakeDamage()

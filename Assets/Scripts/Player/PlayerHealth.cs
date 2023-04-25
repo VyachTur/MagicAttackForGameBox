@@ -49,7 +49,7 @@ namespace Player
 
             if (_currentHealth <= 0f)
             {
-                GetComponent<PlayerDie>().Die();
+                GetComponent<PlayerDie>()?.Die();
                 return;
             }
 
@@ -69,7 +69,7 @@ namespace Player
             {
                 if (_currentHealth <= 0f)
                 {
-                    GetComponent<PlayerDie>().Die();
+                    GetComponent<PlayerDie>()?.Die();
                     yield return null;
                 }
                 else

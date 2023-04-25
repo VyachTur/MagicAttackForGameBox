@@ -54,7 +54,7 @@ namespace Enemies
             GameObject randomLoot = _loot.GetRandomLoot();
             if (randomLoot != null)
             {
-                Loot loot = Instantiate(randomLoot, transform.position, Quaternion.identity)?.GetComponent<Loot>();
+                Loot loot = Instantiate(randomLoot, transform.position, Quaternion.identity).GetComponent<Loot>();
                 
                 if (loot is PlusExp) loot.LootValue = _enemySO.ExpForPlayerLoot;
                 else loot.LootValue = _enemySO.HpForPlayerLoot;
