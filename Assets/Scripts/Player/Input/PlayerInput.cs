@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Player.Input
 {
@@ -26,57 +27,57 @@ namespace Player.Input
         {
             _inputActions.Enable();
 
-            _inputActions.PlayerControls.AttackFirst.performed += context => OnAttackFirstStart();
-            _inputActions.PlayerControls.AttackFirst.canceled += context => OnAttackFirstEnd();
-            _inputActions.PlayerControls.AttackSecond.performed += context => OnAttackSecondStart();
-            _inputActions.PlayerControls.AttackSecond.canceled += context => OnAttackSecondEnd();
-            _inputActions.PlayerControls.Move.performed += context => OnMoveStart();
-            _inputActions.PlayerControls.Move.canceled += context => OnMoveEnd();
-            _inputActions.PlayerControls.Look.performed += context => OnLook();
-            _inputActions.PlayerControls.Dash.performed += context => OnDash();
+            _inputActions.PlayerControls.AttackFirst.performed += OnAttackFirstStart;
+            _inputActions.PlayerControls.AttackFirst.canceled += OnAttackFirstEnd;
+            _inputActions.PlayerControls.AttackSecond.performed += OnAttackSecondStart;
+            _inputActions.PlayerControls.AttackSecond.canceled += OnAttackSecondEnd;
+            _inputActions.PlayerControls.Move.performed += OnMoveStart;
+            _inputActions.PlayerControls.Move.canceled += OnMoveEnd;
+            _inputActions.PlayerControls.Look.performed += OnLook;
+            _inputActions.PlayerControls.Dash.performed += OnDash;
         }
 
         private void OnDisable()
         {
-            _inputActions.PlayerControls.AttackFirst.performed -= context => OnAttackFirstStart();
-            _inputActions.PlayerControls.AttackFirst.canceled -= context => OnAttackFirstEnd();
-            _inputActions.PlayerControls.AttackSecond.performed -= context => OnAttackSecondStart();
-            _inputActions.PlayerControls.AttackSecond.canceled -= context => OnAttackSecondEnd();
-            _inputActions.PlayerControls.Move.performed -= context => OnMoveStart();
-            _inputActions.PlayerControls.Move.canceled -= context => OnMoveEnd();
-            _inputActions.PlayerControls.Look.performed -= context => OnLook();
-            _inputActions.PlayerControls.Dash.performed -= context => OnDash();
+            _inputActions.PlayerControls.AttackFirst.performed -= OnAttackFirstStart;
+            _inputActions.PlayerControls.AttackFirst.canceled -= OnAttackFirstEnd;
+            _inputActions.PlayerControls.AttackSecond.performed -= OnAttackSecondStart;
+            _inputActions.PlayerControls.AttackSecond.canceled -= OnAttackSecondEnd;
+            _inputActions.PlayerControls.Move.performed -= OnMoveStart;
+            _inputActions.PlayerControls.Move.canceled -= OnMoveEnd;
+            _inputActions.PlayerControls.Look.performed -= OnLook;
+            _inputActions.PlayerControls.Dash.performed -= OnDash;
 
             _inputActions.Disable();
         }
 
-        private void OnAttackFirstStart() => 
+        private void OnAttackFirstStart(InputAction.CallbackContext context) => 
             OnPlayerFirstAttackStartEvent?.Invoke();
 
-        private void OnAttackFirstEnd() => 
+        private void OnAttackFirstEnd(InputAction.CallbackContext context) => 
             OnPlayerFirstAttackEndEvent?.Invoke();
 
-        private void OnAttackSecondStart()
+        private void OnAttackSecondStart(InputAction.CallbackContext context)
         {
             OnPlayerSecondAttackStartEvent?.Invoke();
         }
 
-        private void OnAttackSecondEnd()
+        private void OnAttackSecondEnd(InputAction.CallbackContext context)
         {
             OnPlayerSecondAttackEndEvent?.Invoke();
         }
 
-        private void OnMoveStart() => 
+        private void OnMoveStart(InputAction.CallbackContext context) => 
             OnPlayerMoveStartEvent?.Invoke(_inputActions.PlayerControls.Move.ReadValue<Vector2>());
 
-        private void OnMoveEnd() => 
+        private void OnMoveEnd(InputAction.CallbackContext context) => 
             OnPlayerMoveEndEvent?.Invoke(_inputActions.PlayerControls.Move.ReadValue<Vector2>());
 
-        private void OnLook() => 
+        private void OnLook(InputAction.CallbackContext context) => 
             OnPlayerLookEvent?.Invoke(_inputActions.PlayerControls.Look.ReadValue<Vector2>());
 
 
-        private void OnDash() =>
+        private void OnDash(InputAction.CallbackContext context) =>
             OnPlayerDashEvent?.Invoke();
     }
 }

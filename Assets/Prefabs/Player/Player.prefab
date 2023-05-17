@@ -7336,7 +7336,7 @@ MonoBehaviour:
   _explosionCircleArea: {fileID: 5984511021594168269}
   _timeToEffectReload: 11
   _damage: 0
-  _currentEffectType: 0
+  _currentEffectType: 2
   _isActiveAttackAreaEffect: 0
   _areaEffectImage: {fileID: 5984511022741484352}
   _areaAttackCardUpdater: {fileID: 1319974581}
